@@ -1,0 +1,24 @@
+Todo/feature list:
+
+* Add arrows/labels to SVG to show name of weekdays and when the weekend begins (Fri 17:00)
+
+* Alter color of progress bar depending on weekday. Red/orange in the beginning of the week, green at the weekend.
+
+* Show title labels displaying neat comments on weekly status ('Go back to work!' 'Weekend! Go home and play!')
+
+* Show neat images/animations that corresponds to the current progress - guy hacking a stone, guy partying with umbrella drinks.
+
+* Alter background color depending on weekend status.
+
+* Assert correct media types in the markup.
+
+* Show progress label in %
+
+* Convert into Opera Speed Dial Extension.
+
+* Convert into W3C Widget. 
+
+Bugs:
+
+* To few beers in the fridge - go shopping.
+
