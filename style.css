@@ -6,8 +6,6 @@ html {
   height: 100%;
 }
 
-/* Use display:table and display:table-cell
-so that we can use vertical-align:middle */
 body {
   background: #444;
   height: 100%;
