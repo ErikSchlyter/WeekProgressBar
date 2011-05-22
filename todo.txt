@@ -14,7 +14,7 @@ Todo/feature list:
 
 * Show progress label in %
 
-* Autoreload every minute.
+[x] Autoreload every minute.
 
 * Convert into Opera Speed Dial Extension.
 

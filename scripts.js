@@ -74,3 +74,4 @@ function setStatusYes()
 
 window.addEventListener('load', weekprogress, false);
 window.addEventListener('resize', weekprogress, false);
+window.setInterval(weekprogress, 60*1000);
