@@ -10,7 +10,7 @@ Todo/feature list:
 
 [x] Alter background color depending on weekend status.
 
-* Assert correct media types in the markup.
+[x] Assert correct media types in the markup.
 
 * Show progress label in %
 

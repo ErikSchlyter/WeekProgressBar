@@ -7,6 +7,7 @@ html {
   text-align:center;
   font-family: "trebuchet ms", "lucida grande", "lucida sans unicode", "arial", "helvetica", sans-serif;
   font-weight: bold;
+  font-size:2em;
 }
 
 body {
@@ -65,4 +66,10 @@ body {
 #comment {
   position:relative;
   top: 25%;
+}
+
+@media screen and (view-mode: minimized) {
+  html {
+    font-size: 1em;
+  }
 }
