@@ -1,3 +1,6 @@
+var minutesofweek = 60 * 24 * 7;
+var minutestofriday = 60 * 24 * 4;
+var minutestoweekend= 60 * 24 * 4 + 17 * 60;
 
 function fix_progress_size(value, max)
 {
@@ -26,12 +29,48 @@ function fix_progress_size(value, max)
 
 function weekprogress()
 {
-  var minutesofweek = 60 * 24 * 7;
   date = new Date();
   var days = (date.getDay() + 6) % 7
   var minute = ((date.getDay() + 6) % 7) * 24 * 60 + date.getHours() * 60 + date.getMinutes();
 
   fix_progress_size(minute, minutesofweek);
+	if (minute < minutestofriday)
+	{
+		setStatusNo();
+	}
+	else if (minute < minutestoweekend)
+	{
+		setStatusSoon();
+	}
+	else
+	{
+		setStatusYes();
+	}
+}
+
+function setStatusNo()
+{
+	document.getElementById('yesimg').style.display = 'none';
+	document.getElementById('noimg').style.display = 'block';
+	document.getElementById('comment').innerHTML = 'Get back to work!';
+	document.getElementsByTagName('body')[0].style.backgroundColor = '#444';
+}
+
+function setStatusSoon()
+{
+	document.getElementById('yesimg').style.display = 'none';
+	document.getElementById('noimg').style.display = 'block';
+	document.getElementById('comment').innerHTML = "but soon, it's Friday!";
+	document.getElementsByTagName('body')[0].style.backgroundColor = '#555';
+}
+
+function setStatusYes()
+{
+	document.getElementById('yesimg').style.display = 'block';
+	document.getElementById('noimg').style.display = 'none';
+	document.getElementById('comment').innerHTML = "Go home and play!";
+	document.getElementsByTagName('body')[0].style.backgroundColor = '#084808';
 }
 
 window.addEventListener('load', weekprogress, false);
+window.addEventListener('resize', weekprogress, false);
