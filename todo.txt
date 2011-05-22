@@ -16,7 +16,7 @@ Todo/feature list:
 
 [x] Autoreload every minute.
 
-* Convert into Opera Speed Dial Extension.
+[x] Convert into Opera Speed Dial Extension.
 
 * Convert into W3C Widget. 
 

@@ -48,11 +48,21 @@ function weekprogress()
 	}
 }
 
+function setComment(comment)
+{
+  if (opera.contexts && opera.contexts.speeddial) {
+    var sd = opera.contexts.speeddial;
+    sd.title = comment;
+  } else {
+    document.getElementById('comment').innerHTML = comment;
+  }
+}
+
 function setStatusNo()
 {
 	document.getElementById('yesimg').style.display = 'none';
 	document.getElementById('noimg').style.display = 'block';
-	document.getElementById('comment').innerHTML = 'Get back to work!';
+	setComment('Get back to work!');
 	document.getElementsByTagName('body')[0].style.backgroundColor = '#444';
 }
 
@@ -60,7 +70,7 @@ function setStatusSoon()
 {
 	document.getElementById('yesimg').style.display = 'none';
 	document.getElementById('noimg').style.display = 'block';
-	document.getElementById('comment').innerHTML = "but soon, it's Friday!";
+	setComment("but soon, it's Friday!");
 	document.getElementsByTagName('body')[0].style.backgroundColor = '#555';
 }
 
@@ -68,7 +78,7 @@ function setStatusYes()
 {
 	document.getElementById('yesimg').style.display = 'block';
 	document.getElementById('noimg').style.display = 'none';
-	document.getElementById('comment').innerHTML = "Go home and play!";
+	setComment("Go home and play!");
 	document.getElementsByTagName('body')[0].style.backgroundColor = '#084808';
 }
 

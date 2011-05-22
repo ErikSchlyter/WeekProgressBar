@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="http://erikschlyter.github.com/WeekProgressBar" defaultlocale="en" viewmodes="minimized">
+  <name short="Week Progress Bar">Week Progress Bar - Is it weekend, yet?</name>
+  <description>Gives the current progress of the week and tells you wether or not it is weekend yet..</description>
+  <author href="http://www.erisc.se/">Erik Schlyter</author>
+  <feature name="opera:speeddial" required="false">
+    <param name="url" value="http://erikschlyter.github.com/WeekProgressBar"/>
+  </feature>
+</widget>
