@@ -7,7 +7,7 @@ function fix_progress_size(value, max)
   /* since the SVG can't have size 100% - borderpadding, we use JS to contract
      the size for the border */
 
-  var svgel = document.getElementById('svg');
+  var svgel = window.document.getElementById('svg');
   var svg = svgel.getSVGDocument();
   var p_bg = svg.getElementById('progress_background');
   var p_in = svg.getElementById('progress_indicator');
