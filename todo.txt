@@ -27,3 +27,5 @@ Bugs:
 #1 - To few beers in the fridge - go shopping.
 
 #2 - Firefox refuses to show the No/Yes SVG images.
+
+#3 - Opera 11.11 refuses to show progress SVG due to security issue.
