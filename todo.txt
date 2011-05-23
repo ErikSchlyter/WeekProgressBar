@@ -18,7 +18,7 @@ Todo/feature list:
 
 [x] Convert into Opera Speed Dial Extension.
 
-* Convert into W3C Widget. 
+[x] Convert into W3C Widget.
 
 Bugs:
 
