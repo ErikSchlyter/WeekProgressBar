@@ -1,6 +1,8 @@
 Todo/feature list:
 
-* Add arrows/labels to SVG to show name of weekdays and when the weekend begins (Fri 17:00)
+* Add arrows/labels to SVG to show name of weekdays.
+
+[x] Add marker to show when weekend begins (Fri 17:00).
 
 * Alter color of progress bar depending on weekday. Red/orange in the beginning of the week, green at the weekend.
 
@@ -18,7 +20,7 @@ Todo/feature list:
 
 [x] Convert into Opera Speed Dial Extension.
 
-* Convert into W3C Widget. 
+[x] Convert into W3C Widget.
 
 Bugs:
 

@@ -32,6 +32,7 @@ body {
   height:20%;
   position:relative;
   top:10%;
+	z-index:1;
 }
 
 #yesimg, #noimg {
@@ -78,5 +79,69 @@ body {
 
   #progressbar {
 	  height: 35%;
+  }
+}
+
+@media screen and (view-mode: minimized) {
+  html {
+    font-size: 1em;
+  }
+  #comment {
+    display:none;
+  }
+
+  #progressbar {
+	  height: 35%;
+  }
+}
+
+
+@media screen and (max-width:320px)
+{
+  html {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width:180px)
+{
+  html {
+    font-size: 0.8em;
+  }
+  
+  #progressbar {
+	  height: 35%;
+	  top:10%;
+  }
+
+  #comment {
+	  top:10%;
+  }
+}
+
+@media screen and (max-width:128px)
+{
+  #comment {
+    display:none;
+  }
+  #question {
+    display:none;
+  }
+
+  #container {
+    dispaly:block;
+  }
+
+  #yesno {
+    display:block;
+    height:50%;
+    top: 25%;
+  }
+  #progressbar {
+    display:block;
+    width:100%;
+    height:95%;
+    top: 0%;
+    position:absolute;
   }
 }

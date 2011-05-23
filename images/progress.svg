@@ -28,5 +28,6 @@
   <svg id='prog'>
     <rect id='progress_indicator' x="10" y="10" rx="12" ry="12" width="100%" height="100%" style="fill:url(#progress); stroke:black;;stroke-width:4;opacity:0.8"/> -->
   </svg>
+  <line x1='67.25%' y1='0' x2='67.25%' y2='100%' style='stroke:gray;stroke-width:3; opacity:0.5'/>
 
 </svg>
