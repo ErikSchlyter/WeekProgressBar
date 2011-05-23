@@ -24,5 +24,6 @@ Todo/feature list:
 
 Bugs:
 
-* To few beers in the fridge - go shopping.
+#1 - To few beers in the fridge - go shopping.
 
+#2 - Firefox refuses to show the No/Yes SVG images.
