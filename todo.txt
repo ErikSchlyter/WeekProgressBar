@@ -1,6 +1,8 @@
 Todo/feature list:
 
-* Add arrows/labels to SVG to show name of weekdays.
+* Add labels to SVG to show name of weekdays.
+
+[x] Add markers for the different weekdays.
 
 [x] Add marker to show when weekend begins (Fri 17:00).
 
