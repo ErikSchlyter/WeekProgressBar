@@ -134,8 +134,10 @@ body {
 
   #yesno {
     display:block;
-    height:50%;
+    width:100%;
+    height:40%;
     top: 25%;
+    position:absolute;
   }
   #progressbar {
     display:block;
