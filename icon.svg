@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="256" height="256" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+  <g transform="translate(0 64) rotate(-20 128 64)">
+    <svg width="256" height="128" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+      <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(30,30,30);stop-opacity:1"/> <!-- Monday -->
+          <stop offset="4%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+
+          <stop offset="10.28%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+          <stop offset="14.28%" style="stop-color:rgb(30,30,30);stop-opacity:1"/> <!-- Tuesday -->
+          <stop offset="18.28%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+
+          <stop offset="24.57%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+          <stop offset="28.57%" style="stop-color:rgb(30,30,30);stop-opacity:1"/> <!-- Wednesday -->
+          <stop offset="32.57%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+
+          <stop offset="38.87%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+          <stop offset="42.87%" style="stop-color:rgb(30,30,30);stop-opacity:1"/> <!-- Thursday -->
+          <stop offset="46.87%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+
+          <stop offset="53.14%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+          <stop offset="57.14%" style="stop-color:rgb(30,30,30);stop-opacity:1"/> <!-- Friday -->
+          <stop offset="61.14%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+
+          <stop offset="67.25%" style="stop-color:rgb(8,50,8);stop-opacity:1"/> <!-- Friday 17.00 Weekend -->
+
+          <stop offset="69.34%" style="stop-color:rgb(8,38,8);stop-opacity:1"/>
+          <stop offset="71.43%" style="stop-color:rgb(8,40,8);stop-opacity:1"/> <!-- Saturday -->
+          <stop offset="75.43%" style="stop-color:rgb(8,30,8);stop-opacity:1"/>
+
+          <stop offset="81.71%" style="stop-color:rgb(8,30,8);stop-opacity:1"/>
+          <stop offset="85.71%" style="stop-color:rgb(8,40,8);stop-opacity:1"/> <!-- Sunday -->
+          <stop offset="89.71%" style="stop-color:rgb(8,30,8);stop-opacity:1"/>
+
+          <stop offset="96%" style="stop-color:rgb(8,30,8);stop-opacity:1"/>
+          <stop offset="100%" style="stop-color:rgb(8,40,8);stop-opacity:1"/>
+        </linearGradient>
+
+        <linearGradient id="progress" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:rgb(10,40,40);stop-opacity:0.8"/>
+          <stop offset="20%" style="stop-color:rgb(10,190,40);stop-opacity:0.8"/>
+          <stop offset="40%" style="stop-color:rgb(10,220,40);stop-opacity:0.8"/>
+          <stop offset="70%" style="stop-color:rgb(10,180,40);stop-opacity:0.8"/>
+          <stop offset="100%" style="stop-color:rgb(10,40,40);stop-opacity:0.8"/>
+        </linearGradient>
+        <filter id="drop-shadow">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+        </filter>
+      </defs>
+
+      <rect id='shadow' x="11" y="11" rx="12" ry="12" width="234" height="106" style="fill:#001040; stroke:black;stroke-width:4;filter:url(#drop-shadow)"/>
+      <rect id='progress_background' x="10" y="10" rx="12" ry="12" width="234" height="106" style="fill:url(#bg); stroke:black;stroke-width:4;opacity:0.99"/>
+      <svg id='prog' width="70">
+        <rect id='progress_indicator' x="10" y="10" rx="12" ry="12" width="234" height="106" style="fill:url(#progress); stroke:black;;stroke-width:4;opacity:0.8"/> -->
+      </svg>
+
+      <line x1='67.25%' y1='0' x2='67.25%' y2='100%' style='stroke:gray;stroke-width:3; opacity:0.5'/> <!-- Fri 17:00 - weekend -->
+
+    </svg>
+  </g>
+  <filter id = "textshadow">
+    <feOffset result = "offOut" in = "SourceAlpha" dx = "2" dy = "2"/>
+    <feGaussianBlur result = "blurOut" in = "offOut" stdDeviation = "3"/>
+    <feBlend in = "SourceGraphic" in2 = "blurOut" mode = "normal"/>
+  </filter>
+
+  <g filter="url(#textshadow)">
+    <g filter="url(#textshadow)">
+      <text x="30" y="85" style="font-family:trebuchet;font-weight:bold; stroke-width:2px; stroke:#202020; fill:#F0F0F0;font-size:80px;">is</text>
+      <text x="140" y="80" style="font-family:trebuchet;font-weight:bold; stroke-width:2px; stroke:#202020; fill:#F0F0F0;font-size:80px;">it</text>
+      <text x="5" y="135" style="letter-spacing:-13px;font-family:trebuchet;font-weight:bold; stroke-width:2px; stroke:#202020; fill:#F0F0F0;font-size:68px;" transform="rotate(3)">weekend</text>
+      <text x="40" y="215" style="font-family:trebuchet;font-weight:bold; stroke-width:2px; stroke:#202020; fill:#F0F0F0;font-size:80px;" transform="rotate(-3)">yet?</text>
+    </g>
+  </g>
+</svg>
