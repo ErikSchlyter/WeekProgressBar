@@ -5,10 +5,37 @@
 
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>       <!-- weekday   -->
-      <stop offset="57.15%" style="stop-color:rgb(40,40,40);stop-opacity:1"/>   <!-- friday morning-->
-      <stop offset="67.25%" style="stop-color:rgb(8,40,8);stop-opacity:1"/>   <!-- friday weekend-->
-      <stop offset="71.42%" style="stop-color:rgb(8,50,8);stop-opacity:1"/>   <!-- saturday -->
+      <stop offset="0%" style="stop-color:rgb(30,30,30);stop-opacity:1"/> <!-- Monday -->
+      <stop offset="4%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+
+      <stop offset="10.28%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+      <stop offset="14.28%" style="stop-color:rgb(30,30,30);stop-opacity:1"/> <!-- Tuesday -->
+      <stop offset="18.28%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+
+      <stop offset="24.57%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+      <stop offset="28.57%" style="stop-color:rgb(30,30,30);stop-opacity:1"/> <!-- Wednesday -->
+      <stop offset="32.57%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+
+      <stop offset="38.87%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+      <stop offset="42.87%" style="stop-color:rgb(30,30,30);stop-opacity:1"/> <!-- Thursday -->
+      <stop offset="46.87%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+
+      <stop offset="53.14%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+      <stop offset="57.14%" style="stop-color:rgb(30,30,30);stop-opacity:1"/> <!-- Friday -->
+      <stop offset="61.14%" style="stop-color:rgb(20,20,20);stop-opacity:1"/>
+
+      <stop offset="67.25%" style="stop-color:rgb(8,50,8);stop-opacity:1"/> <!-- Friday 17.00 Weekend -->
+
+      <stop offset="69.34%" style="stop-color:rgb(8,38,8);stop-opacity:1"/>
+      <stop offset="71.43%" style="stop-color:rgb(8,40,8);stop-opacity:1"/> <!-- Saturday -->
+      <stop offset="75.43%" style="stop-color:rgb(8,30,8);stop-opacity:1"/>
+
+      <stop offset="81.71%" style="stop-color:rgb(8,30,8);stop-opacity:1"/>
+      <stop offset="85.71%" style="stop-color:rgb(8,40,8);stop-opacity:1"/> <!-- Sunday -->
+      <stop offset="89.71%" style="stop-color:rgb(8,30,8);stop-opacity:1"/>
+
+      <stop offset="96%" style="stop-color:rgb(8,30,8);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(8,40,8);stop-opacity:1"/>
     </linearGradient>
 
     <linearGradient id="progress" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -29,12 +56,6 @@
     <rect id='progress_indicator' x="10" y="10" rx="12" ry="12" width="100%" height="100%" style="fill:url(#progress); stroke:black;;stroke-width:4;opacity:0.8"/> -->
   </svg>
 
-  <line x1='14.28%' y1='1.5%' x2='14.28%' y2='98.5%' style='stroke:gray;stroke-width:2; opacity:0.2'/> <!-- Tuesday -->
-  <line x1='28.57%' y1='1.5%' x2='28.57%' y2='98.5%' style='stroke:gray;stroke-width:2; opacity:0.2'/> <!-- Wednesday -->
-  <line x1='42.87%' y1='1.5%' x2='42.87%' y2='98.5%' style='stroke:gray;stroke-width:2; opacity:0.2'/> <!-- Thursday -->
-  <line x1='57.14%' y1='1.5%' x2='57.14%' y2='98.5%' style='stroke:gray;stroke-width:2; opacity:0.2'/> <!-- Friday -->
   <line x1='67.25%' y1='0' x2='67.25%' y2='100%' style='stroke:gray;stroke-width:3; opacity:0.5'/> <!-- Fri 17:00 - weekend -->
-  <line x1='71.43%' y1='1.5%' x2='71.43%' y2='98.5%' style='stroke:gray;stroke-width:2; opacity:0.2'/> <!-- Saturday -->
-  <line x1='85.71%' y1='1.5%' x2='85.71%' y2='98.5%' style='stroke:gray;stroke-width:2; opacity:0.2'/> <!-- Sunday -->
 
 </svg>
