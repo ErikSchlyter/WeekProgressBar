@@ -7,6 +7,7 @@
   <feature name="opera:speeddial" required="false">
     <param name="url" value="http://erikschlyter.github.com/WeekProgressBar"/>
   </feature>
+  <icon src="icon.svg"/>
   <width>180</width>
   <height>128</height>
 </widget>
